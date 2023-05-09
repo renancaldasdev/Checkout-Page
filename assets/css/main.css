@@ -1,0 +1,139 @@
+.container h1 {
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+  color: var(--color-title-page);
+  margin-bottom: 5rem;
+}
+
+.form-info h2,
+.form-address h2 {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: var(--color-primary-form);
+  margin-bottom: 1.4rem;
+}
+
+.form-info-content {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: var(--color-label-form);
+  margin-bottom: 0.6rem;
+}
+
+input {
+  display: block;
+  width: 46.5rem;
+  padding: 1.8rem 4rem;
+  border-radius: 1.2rem;
+  border: 1px solid var(--color-second-form);
+
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: var(--color-primary-form);
+}
+
+input::placeholder {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: var(--color-second-form);
+}
+
+.form-info-content img {
+  width: 2rem;
+  top: 3.8rem;
+  left: 1.4rem;
+  position: absolute;
+}
+
+.form-address {
+  margin-top: 5rem;
+}
+
+.form-address-double {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-address-double input {
+  width: 21.7rem;
+}
+
+/* items */
+
+.items {
+  width: 38.3rem;
+  background: var(--bg-color-items);
+  padding: 3rem;
+}
+
+.item-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.item-content img {
+  width: 13.4rem;
+  border-radius: 1.2rem;
+}
+
+.item-content-desc {
+}
+
+.item-content-desc h3 {
+  font-size: 1.6rem;
+  line-height: 2rem;
+
+  color: var(--color-title-page);
+  margin-bottom: 0.8rem;
+}
+
+.item-content-desc span {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: var(--orange-color);
+  margin-right: 1.6rem;
+}
+
+.item-content-desc s {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  color: var(--color-title-page);
+}
+
+.item-qt {
+  margin-top: 3.3rem;
+  width: 13.4rem;
+  padding: 1.5rem 1.3rem;
+  border-radius: 1.2rem;
+  border: 1px solid var(--color-second-form);
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-qt button {
+  width: 2.1rem;
+  height: 2.1rem;
+  padding: 1rem 0.4rem;
+  background-color: var(--button-color-bg);
+  color: var(--color-second-form);
+  border: none;
+  font-size: 1.6rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.item-qt p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: var(--color-primary-form);
+}

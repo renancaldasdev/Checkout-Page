@@ -1,95 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
-
-    <link rel="icon" href="devchallenges.png" />
-
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
+      href="./assets/img/devchallenges.png"
       type="image/x-icon"
-      href="https://devchallenges.io/"
     />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Checkout Page</title>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
+    <main class="container">
+      <h1>Checkout</h1>
+      <div class="content">
+        <div class="form">
+          <div class="form-info">
+            <h2>Contact information</h2>
+            <div class="form-info-content">
+              <label for="email">E-mail</label>
+              <img
+                src="./assets/icons/mail_FILL1_wght400_GRAD0_opsz48.svg"
+                alt=""
+              />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your email..."
+              />
+            </div>
+            <div class="form-info-content">
+              <label for="phone">Phone</label>
+              <img
+                src="./assets/icons/call_FILL1_wght400_GRAD0_opsz48.svg"
+                alt=""
+              />
+              <input
+                type="phone"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone..."
+              />
+            </div>
+          </div>
 
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+          <div class="form-address">
+            <h2>Shipping address</h2>
+            <div class="form-info-content">
+              <label for="name">Full name</label>
+              <img
+                src="./assets/icons/account_circle_FILL1_wght400_GRAD0_opsz48.svg"
+                alt=""
+              />
+              <input
+                type="text"
+                name="text"
+                id="name"
+                placeholder="Enter your name..."
+              />
+            </div>
+            <div class="form-info-content">
+              <label for="address">Address</label>
+              <img
+                src="./assets/icons/home_FILL1_wght400_GRAD0_opsz48.svg"
+                alt=""
+              />
+              <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Your address..."
+              />
+            </div>
+            <div class="form-info-content">
+              <label for="city">City</label>
+              <img
+                src="./assets/icons/location_city_FILL1_wght400_GRAD0_opsz48.svg"
+                alt=""
+              />
+              <input
+                type="text"
+                name="city"
+                id="city"
+                placeholder="Your address..."
+              />
+            </div>
+
+            <div class="form-address-double">
+              <div class="form-info-content">
+                <label for="country">Country</label>
+                <img
+                  src="./assets/icons/public_FILL1_wght400_GRAD0_opsz48.svg"
+                  alt=""
+                />
+                <input
+                  type="text"
+                  name="country"
+                  id="country"
+                  placeholder="Your country..."
+                />
+              </div>
+
+              <div class="form-info-content">
+                <label for="postal">Your postal code</label>
+                <img
+                  src="./assets/icons/markunread_mailbox_FILL1_wght400_GRAD0_opsz48.svg"
+                  alt=""
+                />
+                <input
+                  type="text"
+                  name="postal"
+                  id="postal"
+                  placeholder="Your postal code..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="item-content">
+            <img src="./assets/img/photo1.png" alt="mochila vintage" />
+            <div class="item-content-desc">
+              <h3>Vintage Backbag</h3>
+              <p><span>$54.99</span><s>$94.99</s></p>
+              <div class="item-qt">
+                <button>-</button>
+                <p>1</p>
+                <button>+</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
+    </main>
   </body>
 </html>
