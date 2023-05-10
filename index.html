@@ -16,7 +16,7 @@
     <main class="container">
       <h1>Checkout</h1>
       <div class="content">
-        <div class="form">
+        <form class="form">
           <div class="form-info">
             <h2>Contact information</h2>
             <div class="form-info-content">
@@ -26,6 +26,7 @@
                 alt=""
               />
               <input
+                required
                 type="email"
                 name="email"
                 id="email"
@@ -39,7 +40,8 @@
                 alt=""
               />
               <input
-                type="phone"
+                required
+                type="tel"
                 name="phone"
                 id="phone"
                 placeholder="Enter your phone..."
@@ -56,6 +58,7 @@
                 alt=""
               />
               <input
+                required
                 type="text"
                 name="text"
                 id="name"
@@ -69,6 +72,7 @@
                 alt=""
               />
               <input
+                required
                 type="text"
                 name="address"
                 id="address"
@@ -82,6 +86,7 @@
                 alt=""
               />
               <input
+                required
                 type="text"
                 name="city"
                 id="city"
@@ -97,6 +102,7 @@
                   alt=""
                 />
                 <input
+                  required
                   type="text"
                   name="country"
                   id="country"
@@ -111,6 +117,7 @@
                   alt=""
                 />
                 <input
+                  required
                   type="text"
                   name="postal"
                   id="postal"
@@ -119,7 +126,14 @@
               </div>
             </div>
           </div>
-        </div>
+          <div class="checkbox">
+            <input required type="checkbox" name="checkbox" id="checkbox" />
+            <label for="checkbox">Save this information for next time</label>
+          </div>
+          <div class="button">
+            <button class="button-form">Continue</button>
+          </div>
+        </form>
         <div class="items">
           <div class="item-content">
             <img src="./assets/img/photo1.png" alt="mochila vintage" />
@@ -131,6 +145,31 @@
                 <p>1</p>
                 <button>+</button>
               </div>
+            </div>
+          </div>
+
+          <div class="item-content">
+            <img src="./assets/img/photo2.png" alt="Levi Shoes" />
+            <div class="item-content-desc">
+              <h3>Levi Shoes</h3>
+              <p><span>$74.99</span><s>$124.99</s></p>
+              <div class="item-qt">
+                <button>-</button>
+                <p>1</p>
+                <button>+</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="items-details">
+            <div class="shipping">
+              <p>Shipping</p>
+              <p>$19</p>
+            </div>
+
+            <div class="total">
+              <p>Total</p>
+              <p>$148.99</p>
             </div>
           </div>
         </div>
