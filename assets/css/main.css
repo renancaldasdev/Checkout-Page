@@ -64,12 +64,55 @@ input::placeholder {
   width: 21.7rem;
 }
 
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.checkbox label {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  margin-bottom: 0;
+}
+
+input[type="checkbox"] {
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+.button {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.button-form {
+  width: 16.6rem;
+  padding: 1.7rem 4.5rem;
+  background-color: var(--orange-color);
+  border-radius: 1.2rem;
+  border: none;
+  cursor: pointer;
+
+  font-size: 1.6rem;
+  line-height: 2rem;
+  color: #fff;
+}
+
 /* items */
 
 .items {
   width: 38.3rem;
+  height: 53.5rem;
+  border-radius: 12px;
   background: var(--bg-color-items);
   padding: 3rem;
+}
+
+.items > div {
+  margin-bottom: 30px;
 }
 
 .item-content {
@@ -80,9 +123,6 @@ input::placeholder {
 .item-content img {
   width: 13.4rem;
   border-radius: 1.2rem;
-}
-
-.item-content-desc {
 }
 
 .item-content-desc h3 {
@@ -136,4 +176,28 @@ input::placeholder {
   font-size: 1.6rem;
   line-height: 2rem;
   color: var(--color-primary-form);
+}
+
+.items-details {
+  margin-top: 100px;
+}
+
+.items-details > div {
+  margin-top: 20px;
+}
+
+.shipping,
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #bdbdbd;
+  padding-top: 1rem;
+}
+
+@media (max-width: 400px) {
+  .items {
+    width: 35rem;
+    padding: 3rem 2rem;
+  }
 }
