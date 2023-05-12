@@ -196,8 +196,15 @@ input[type="checkbox"] {
 }
 
 @media (max-width: 400px) {
+  input {
+    max-width: 35rem;
+  }
   .items {
     width: 35rem;
     padding: 3rem 2rem;
+    margin-bottom: 4rem;
+  }
+  .form-address-double input {
+    max-width: 16rem;
   }
 }
