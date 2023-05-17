@@ -195,9 +195,16 @@ input[type="checkbox"] {
   padding-top: 1rem;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 900px) {
+  .container h1 {
+    text-align: center;
+  }
   input {
     max-width: 35rem;
+  }
+  .content {
+    justify-content: space-around;
+    gap: 20px;
   }
   .items {
     width: 35rem;
